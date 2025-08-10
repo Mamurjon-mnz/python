@@ -1,0 +1,51 @@
+#1. Quyidagi matndan mashina nomlarini ajrating
+txt="MsaatmiazD"
+print(txt[0::2])
+print(txt[9:0:-2])
+#2.Quyidagi matndan shaxs qaerda ekanligini ajrating
+txt="I'm John. I am from London"
+print(txt[20::])
+#3. Foydalanuvchi kiritgan matnni teskari qilib chiqaradigan dastur yozing
+txt= "Vatanparvar"
+print(txt[::-1])
+#4.Berilgan so'z Palindrom ekanligini tekshiradigan dastur yozing
+txt="arra"
+teskari=txt[::-1]
+print(txt==teskari)
+#5. Beshta meva nomidan iborat ro'yxat yarating va uchinchi mevani chop eting
+txt=["Olma", "Nok", "Banan", "Shaftoli", "Olcha"]
+print(txt[2])
+#6. Ikkita sonlar ro'yxatini yarating va ularni birlashtiring
+txt1=["Asal", "Shakar"]
+txt2=["Non", "Suv"]
+print(txt1+txt2)
+#7. Berilgan ro‘yxatdan birinchi, o‘rta va oxirgi elementlarni ajratib, yangi ro‘yxatga joylang.
+ruyxat = ['olma', 'olcha', 'anor', 'uzum']
+yangi_ruyxat = []
+
+yangi_ruyxat.append(ruyxat[0])
+yangi_ruyxat.append(ruyxat[-1])
+
+print(yangi_ruyxat)
+
+
+#8. Shaharlar ro‘yxatida "Paris" bor yoki yo‘qligini tekshiring va natijani chop eting.
+shaharlar = ['New York', 'Tokyo', 'Paris', 'London']
+if 'Paris' in shaharlar:
+    print("bor")
+else:
+    print("Yo'q")
+
+#9. Sonlardan iborat ro‘yxatni hech qanday sikl (loop) ishlatmasdan ikki marta takrorlab yangi ro‘yxat yarating.
+sonlar = [1, 2, 3, 4, 5]
+yangi_sonlar = sonlar * 2
+print(yangi_sonlar)
+
+
+#10. Sonlardan iborat ro‘yxatda birinchi va oxirgi elementlarning o‘rnini almashtiring.
+
+sonlar = [1, 2, 3, 4, 5, 6, 7]
+
+sonlar[0], sonlar[-1] = sonlar[-1], sonlar[0]
+
+print(sonlar)
